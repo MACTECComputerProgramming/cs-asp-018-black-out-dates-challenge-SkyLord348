@@ -6,4 +6,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="winter-landscape-grigonis-wooden-hut-covered-in-snow.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="winter-landscape-grigonis-wooden-hut-covered-in-snow.jpg" />
+  </ItemGroup>
+
 </Project>

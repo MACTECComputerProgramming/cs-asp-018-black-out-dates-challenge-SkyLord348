@@ -24,5 +24,53 @@ namespace CS_018ChallengeLPB
         {
             InitializeComponent();
         }
+
+        public DateTime firstDate, secondDate;
+
+        public void firstCalendar_SelectedDatesChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+            firstDate = firstCalendar.SelectedDate.Value;
+
+            firstDateLabel.Content = firstCalendar.SelectedDate.ToString();
+
+        }
+
+        public void secondCalendar_SelectedDatesChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+            secondDate = secondCalendar.SelectedDate.Value;
+
+            secondDateLabel.Content = secondCalendar.SelectedDate.ToString();
+
+        }
+
+
+
+
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+
+            SetBlackOutDates(firstDate, secondDate);
+            
+
+
+
+        }
+
+        private void SetBlackOutDates(DateTime firstDate, DateTime secondDate)
+        {
+
+            blackoutCalendar.BlackoutDates.Add(new CalendarDateRange(firstDate, secondDate));
+
+
+
+        }
+
+
+
+
+
     }
 }
