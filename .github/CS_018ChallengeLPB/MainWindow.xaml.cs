@@ -54,7 +54,7 @@ namespace CS_018ChallengeLPB
 
             SetBlackOutDates(firstDate, secondDate);
             
-
+            
 
 
         }
