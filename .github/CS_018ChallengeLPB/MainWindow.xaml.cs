@@ -26,6 +26,7 @@ namespace CS_018ChallengeLPB
         }
 
         public DateTime firstDate, secondDate;
+        
 
         public void firstCalendar_SelectedDatesChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -47,15 +48,14 @@ namespace CS_018ChallengeLPB
 
 
 
-
-
         private void button1_Click(object sender, RoutedEventArgs e)
         {
 
             SetBlackOutDates(firstDate, secondDate);
-            
-            
 
+            TimeSpan daysBetween = secondDate - firstDate;
+
+            numberOfDaysLabel.Content = daysBetween.TotalDays;
 
         }
 

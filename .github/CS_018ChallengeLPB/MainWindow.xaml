@@ -35,7 +35,8 @@
                 </LinearGradientBrush>
             </Calendar.Background>
         </Calendar>
-        <Calendar x:Name="blackoutCalendar" HorizontalAlignment="Left" Margin="560,64,0,0" VerticalAlignment="Top" Background="#FF00FF0C"/>
+        <Calendar x:Name="blackoutCalendar" HorizontalAlignment="Left" Margin="560,64,0,0" 
+                  VerticalAlignment="Top" Background="#FF00FF0C" />
         <Label x:Name="firstDateLabel" Content="First Date" HorizontalAlignment="Left" Margin="87,237,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
         <Label x:Name="secondDateLabel" Content="Second Date" HorizontalAlignment="Left" Margin="306,237,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
         <Label x:Name="numberOfDaysLabel" Content="Num. of days in between" HorizontalAlignment="Center" Margin="0,341,0,0" VerticalAlignment="Top" FontSize="18" FontStyle="Italic"/>
